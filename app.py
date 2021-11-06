@@ -21,7 +21,7 @@ labels = ['Cat', 'Dog']
 
 def load__model():
     print('[INFO] : Model loading ................')
-    model = tf.keras.models.load_model('Dog_vs_cat/model/-mobilenetv2-Adam.h5', custom_objects={
+    model = tf.keras.models.load_model('-mobilenetv2-Adam.h5', custom_objects={
                                        "KerasLayer": hub.KerasLayer})
 
     return model
